@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOT AI ANIME</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1 class="header">BOT AI ANIME</h1>
+    
+    <form id="api-form" class="form">
+        <div class="form-group">
+            <label for="prompt">Prompt:</label>
+            <input type="text" id="prompt" name="prompt" value="beautiful" required>
+        </div>
+
+        <div class="form-group">
+            <label for="model_id">Choose Model:</label>
+            <select id="model_id" name="model_id">
+                <option value="4zdwGOB">4zdwGOB</option>
+                <option value="mG9Pvko">mG9Pvko</option>
+                <option value="r2La2w2">r2La2w2</option>
+                <option value="qGdxrYG">qGdxrYG</option>
+                <option value="K6KkkKl">K6KkkKl</option>
+                <option value="vln8Nwr">vln8Nwr</option>
+                <option value="vlnWOO4">vlnWOO4</option>
+                <option value="NR6ZVma">NR6ZVma</option>
+                <option value="V6vYoaL">V6vYoaL</option>
+                <option value="nG2nkqN">nG2nkqN</option>
+                <option value="LA9j2nX">LA9j2nX</option>
+                <option value="NRz9J7R">NRz9J7R</option>
+                <option value="DreamFul">DreamFul</option>
+                <option value="lGJBaxy">lGJBaxy</option>
+                <option value="X9zNVO1">X9zNVO1</option>
+                <option value="woErXml">woErXml</option>
+                <option value="mG22KJg">mG22KJg</option>
+                <option value="WLRRBnv">WLRRBnv</option>
+                <option value="RR6lMmw">RR6lMmw</option>
+                <option value="76EmEaz">76EmEaz</option>
+                
+            </select>
+        </div>
+        
+        
+        <div class="form-group" style="display: none;">
+            <label for="num_images">Number of Images:</label>
+            <select id="num_images" name="num_images">
+                <option value="1" selected>1</option>
+            </select>
+        </div>
+        
+        <input type="hidden" id="access_token" name="access_token">
+        <input type="hidden" id="width" name="width" value="512">
+        <input type="hidden" id="height" name="height" value="768">
+        
+        <button type="button" id="submit-button" class="submit-button">Submit</button>
+        <br><br>
+        <div class="loading-container" id="loading">
+            <div class="loading"></div>
+        </div>
+    </form>
+
+    <div id="response-container" class="response">
+        <p>Response will be displayed here.</p>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* Add your CSS styles here */
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form {
+    background-color: #ffffff;
+    padding: 70px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #258cd1;
+}
+
+.loading-container {
+    display: none;
+}
+
+.loading {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+.response {
+    margin-top: 20px;
+}
+
+/* Add styles for the dropdown menu */
+select#model_id {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    appearance: none; /* Remove default arrow icon on some browsers */
+    background-image: url("dropdown-arrow.png"); /* Add a custom dropdown arrow icon */
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+/* Style the dropdown when it's focused or hovered */
+select#model_id:hover,
+select#model_id:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.7);
+}
+
+/* Style dropdown options */
+select#model_id option {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Style the selected option */
+select#model_id option:checked {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Style the dropdown when it's open */
+select#model_id:active {
+    border-color: #3498db;
+    box-shadow: none;
+}
